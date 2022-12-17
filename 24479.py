@@ -17,19 +17,19 @@ for i in range(m):
     graph[v].append(u)
 
 cnt=1
-def dfs(graph,v,visted):
+def dfs(graph,v,visited):
     #함수 밖에 cnt값을 쓰기 위해서 global이라고 명시
     global cnt
     #방문할 때마다 순차 값 변경
-    visted[v]=cnt
+    visited[v]=cnt
     #연결된 노드 방문
     for i in graph[v]:
         #방문 안한 노드일 경우
-        if visted[i]==0:
+        if visited[i]==0:
             #순차 증가
             cnt+=1
             #dfs 실행
-            dfs(graph,i,visted)
+            dfs(graph,i,visited)
  
 #오름차순 정리
 for i in range(n+1):
