@@ -17,11 +17,11 @@ visited_bfs = [0]*(n+1)
 # print(visited_dfs)
 # [0, 0, 0, 0, 0]
 
-# 입력받는 값에 대해 영행렬에 1삽입 - 노드 연결
+#  노드 연결
 for i in range(m):
     a,b=map(int,input().split())
     graph[a].append(b)
-    graph[v].append(a)
+    graph[b].append(a)
     
 for i in range(n+1):
     graph[i].sort()
@@ -31,11 +31,12 @@ cnt_dfs = 1
 def dfs(v):
     global cnt_dfs
     # 방문 노드 체크
-    visited_dfs[v]=cnt_dfs
+    visited_dfs[v] = cnt_dfs
     print(v,end=' ')
+    # print(graph[v])
     #재귀
     for i in graph[v]:
-        if visited_dfs[i]==0:
+        if visited_dfs[i] == 0:
             cnt_dfs += 1
             dfs(i)
 
