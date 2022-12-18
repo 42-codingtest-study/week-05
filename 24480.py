@@ -1,4 +1,4 @@
-#24479 dfs서준조교님 그만 뵙겠습니당ㅎㅎ
+#24480 dfs서준조교님 그만 뵙겠습니당ㅎㅎ
 import sys
 input = sys.stdin.readline
 #재귀 허용 깊이를 수동으로 늘려주는 코드라 함

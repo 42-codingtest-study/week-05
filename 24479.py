@@ -19,17 +19,17 @@ for _ in range(M):
 for i in range(N + 1):
     graph[i].sort()
 
-def dfs(graph, node, visted):
+def dfs(node):
     #밖의 cnt를 사용하기 위해
     global cnt
-    visted[node] = cnt
+    visited[node] = cnt
 
     for i in graph[node]:
         if visited[i] == 0:
             cnt += 1
-            dfs(graph,i,visted)
+            dfs(i)
 
-dfs(graph, R, visited)
+dfs(R)
 
 for i in range(N + 1):
     if i != 0:
