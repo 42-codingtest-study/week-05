@@ -1,4 +1,4 @@
-#24444 bfs도 서준조교님이시군요
+#24445 서준조교님 그만 봅시다.
 from collections import deque
 import sys
 input = sys.stdin.readline
