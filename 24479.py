@@ -17,7 +17,6 @@ def dfs(R):
     for i in T[R]:
         if visited[i] is False:
             dfs(i)
-    return
 
 
 for i in range(N + 1):
@@ -35,5 +34,6 @@ count = 1
 dfs(R)
 for i in range(1, N + 1):
     print(result_map[i])
+
 
 
