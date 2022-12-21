@@ -2,7 +2,7 @@
 
 from collections import deque
 import sys
-imput = sys.stdin.readline
+input = sys.stdin.readline
 
 # n=정점개수, m=간선개수, v=탐색시작점
 n, m, v = map(int, input().split())
